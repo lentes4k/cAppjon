@@ -1,19 +1,11 @@
 # Usuarios tipo cAppjón
-Realmente el usuario será el mismo, pero tomará diferentes roles dependiendo de la actividad a realizar.
+En nuestra aplicación solo existe un tipo de usuario. La finalidad es la de tomar notas y tener nuestras cosas organizadas de una manera sencilla.
 
 ---
 
-### Usuario anotador
-El mayor tiempo del usuario será dedicado para este rol, el usuario que abre la aplicación para tomar la nota y que la aplicación haga su magia.
-
-Historias de usuario relacionadas: [HU3](https://github.com/lentes4k/Proyecto-IV/issues/6).
-
----
-
-### Usuario administrador
-El usuario que quiere reordenar sus notas, verlas, eliminarlas, reubicarlas. Y hacer lo mismo con los *cajones*.
-
-Historias de usuario relacionadas: [HU1](https://github.com/lentes4k/Proyecto-IV/issues/4), [HU2](https://github.com/lentes4k/Proyecto-IV/issues/5), [HU4](https://github.com/lentes4k/Proyecto-IV/issues/8) y [HU5](https://github.com/lentes4k/Proyecto-IV/issues/9).
+### Usuario estándar
+El único tipo de usuario que existe en la aplicación. Accede a la aplicación y toma sus notas. Es obvio que cada persona tiene sus intereses y sus baremos, pero dado que esto podría ser bastante heterogéneo no haremos diferenciación.
+Si bien es cierto que, como explico más adelante se cogerán una serie de datos con el finde de implementar mejores en aquellos *cajones* más usados o las funciones que el usuario use más
 
 ---
 
