@@ -16,3 +16,4 @@ class Nota:
 
     #Método para clasificar la nota en un cajón
     def clasificarNota(contenido):
+        #Implementación
