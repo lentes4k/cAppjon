@@ -1,3 +1,4 @@
 lenguaje: python
-entidad: src/cajon.py
-entidad: src/nota.py 
+entidad: 
+         -src/cajon.py
+         -src/nota.py 
