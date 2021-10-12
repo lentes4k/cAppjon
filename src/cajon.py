@@ -1,4 +1,7 @@
+from dataclasses import dataclass
+
 #Clase Cajon
+@dataclass(frozen=True)
 class Cajon:
     nombre = '' #Nombre del Cajón
     notas = [] #Lista de las notas que se encuentran en el Cajón
