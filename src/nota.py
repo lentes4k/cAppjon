@@ -1,4 +1,7 @@
+from dataclasses import dataclass
+
 #Clase Nota
+@dataclass(frozen=True)
 class Nota:
     contenido = '' #Contenido de la nota
     cajon = '' #Cajón al que pertenece la nota
