@@ -15,4 +15,4 @@ class Nota:
         return self.cajon
 
     def clasificarNota(contenido):
-        #Implementación
+        
