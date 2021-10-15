@@ -14,5 +14,4 @@ class Nota:
     def getCajon(self):
         return self.cajon
 
-    def clasificarNota(contenido):
-        
+    #def clasificarNota(contenido):
