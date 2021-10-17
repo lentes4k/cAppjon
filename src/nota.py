@@ -4,15 +4,16 @@ class Nota:
     palabrasClave = []
 
     def _init_(self, texto):
-        self.texto = texto
         """Constructor de la clase que se pasa por parámetro el texto de una nota"""
+        self.texto = texto
 
     def getTexto(self):
-        return self.texto
         """ Método Get para el texto de la nota"""
+        return self.texto
 
     def getPalabrasClave(self):
-        return self.palabrasClave
         """Método Get para las palabras clave de la nota"""
+        return self.palabrasClave
+        
 
     
