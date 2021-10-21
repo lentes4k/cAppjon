@@ -21,6 +21,12 @@ Si tenemos un archivo `.lock` nos instalará las dependencias que el programador
 En caso contrario instalará las que la herramienta opine y generará el archivo `.lock`.
 
 
+Vamos a verificar que el archivo `pyproject.toml` es correcto con:
+~~~
+poetry check
+~~~
+
+
 Ahora podemos correr los tests. En nuestro caso se encuentran incluídos `pytest` y `pylint`.
 
 
