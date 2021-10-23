@@ -1,5 +1,5 @@
-from cAppjon.cAppjon.constantes import Constantes
-from cAppjon.cAppjon.errores import Error_personalizado
+from cAppjon.constantes import Constantes
+from cAppjon.errores import Error_personalizado
 
 
 class Nota:
@@ -19,7 +19,7 @@ class Nota:
 
         if (texto > Constantes.LONGITUD_NOTA_MAX):
             raise Error_personalizado("Nota demasiado larga")
-             
+
         self.texto = texto
 
     def getTexto(self):
