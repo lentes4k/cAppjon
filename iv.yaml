@@ -1,3 +1,6 @@
 lenguaje: python
 entidad: src/cajon.py
+automatizar:
+         fichero: pyproject.toml
+         orden: poetry
          
