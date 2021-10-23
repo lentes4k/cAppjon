@@ -1,4 +1,4 @@
-from cAppjon.nota import Nota
+from ..cAppjon.nota import Nota
 
 def nota_nula ():
 
