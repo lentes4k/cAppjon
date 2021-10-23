@@ -1,5 +1,5 @@
-from cAppjon.constantes import Constantes
-from cAppjon.errores import Error_personalizado
+from .constantes import Constantes
+from .errores import Error_personalizado
 
 
 class Nota:
