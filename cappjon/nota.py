@@ -7,7 +7,7 @@ class Nota:
     texto = ''
     palabrasClave = []
 
-    def _init_(self, texto):
+    def __init__(self, texto):
         """Constructor de la clase que se pasa por parámetro el texto de una nota"""
 
         if (texto==''):
