@@ -34,6 +34,7 @@ Para lanzarlos ejecutar lo siguiente:
 ~~~
 poetry run pytest
 ~~~
+Esta sentencia nos lanzará una ejecución de los archivos que tenemos. En la carpeta `test` tenemos 4 archivos. Sólo uno de ellos ejecuta de manera correcta. Los demás arrojarán el error que comprobará el funcionamiento correcto de la clase `nota`. 
 ~~~
 poetry run pylint
 ~~~
