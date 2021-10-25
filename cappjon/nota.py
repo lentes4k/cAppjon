@@ -14,10 +14,10 @@ class Nota:
             raise Error_personalizado("No se permiten notas vacias")
 
 
-        if (texto < Constantes.LONGITUD_NOTA_MIN):
+        if (len(texto) < Constantes.LONGITUD_NOTA_MIN):
             raise Error_personalizado("Nota demasiado corta")
 
-        if (texto > Constantes.LONGITUD_NOTA_MAX):
+        if (len(texto) > Constantes.LONGITUD_NOTA_MAX):
             raise Error_personalizado("Nota demasiado larga")
 
         self.texto = texto
