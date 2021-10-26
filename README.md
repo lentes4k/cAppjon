@@ -31,12 +31,19 @@ Ahora podemos correr los tests. En nuestro caso se encuentran incluídos `pytest
 
 
 Para lanzarlos ejecutar lo siguiente:
+En primer lugar, pytest, que nos lanzará una ejecución de los archivos que tenemos. En la carpeta `test` tenemos 4 archivos. Sólo uno de ellos ejecuta de manera correcta. Los demás arrojarán el error que comprobará el funcionamiento correcto de la clase `nota`. 
 ~~~
 poetry run pytest
 ~~~
-Esta sentencia nos lanzará una ejecución de los archivos que tenemos. En la carpeta `test` tenemos 4 archivos. Sólo uno de ellos ejecuta de manera correcta. Los demás arrojarán el error que comprobará el funcionamiento correcto de la clase `nota`. 
+También podemos hacer uso de `pylint` con esta línea de comando
 ~~~
 poetry run pylint
+~~~
+
+
+Para hacerlo aún más fácil, se incluye un `script` que nos lanzará todos los tests programados. Para hacer uso del mismo basta con lanzar
+~~~
+poetry run test
 ~~~
 
 
