@@ -7,7 +7,5 @@ def nota_corta():
 
     nota = Nota('eo')
 
-    return nota
+    return nota.getTexto()
 
-
-nota_final = nota_corta()

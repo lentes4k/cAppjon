@@ -7,7 +7,7 @@ def nota_nula ():
 
     nota = Nota('')
 
-    return nota
+    return nota.getTexto()
 
 
 nota_final = nota_nula()
