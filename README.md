@@ -42,7 +42,7 @@ poetry run pylint
 
 Podremos comprobar la compilación correcta de nuestra clase con 
 ~~~
-poetry run task check
+poetry run check
 ~~~
 
 
