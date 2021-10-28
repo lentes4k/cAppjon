@@ -3,4 +3,4 @@ entidad: cappjon/nota.py
 automatizar:
          fichero: pyproject.toml
          orden: poetry run
-test: /test/script_test.py
+test: test/script_test.py
