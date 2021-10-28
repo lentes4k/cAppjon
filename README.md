@@ -10,7 +10,7 @@ Para ello se va a servir de varios de *cajones* (~~una suerte de sistema de carp
 Para comenzar, será necesario clonar el repositorio en su máquina. (git clone "")
 
 
-Una vez lo tengamos en nuestra máquina tendremos que [instalar *poetry*](https://python-poetry.org/docs/) 
+Una vez lo tengamos en nuestra máquina linux tendremos que [instalar *poetry*](https://python-poetry.org/docs/) 
 
 
 Ahora tendremos que lanzar 
