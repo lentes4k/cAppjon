@@ -40,6 +40,11 @@ También podemos hacer uso de `pylint` con esta línea de comando
 poetry run pylint
 ~~~
 
+Podremos comprobar la compilación correcta de nuestra clase con 
+~~~
+poetry run task check
+~~~
+
 
 Para hacerlo aún más fácil, se incluye un `script` que nos lanzará todos los tests programados. Para hacer uso del mismo basta con lanzar
 ~~~
@@ -51,6 +56,7 @@ Podremos añadir nuevos tests al directorio `test` y lanzarlos con:
 ~~~
 poetry run /test/"nombre.py"
 ~~~
+O al introducir `taskipy` podemos añadir lanzamientos de tareas en `[tool.taskipy.tasks]`
 
 
 Finalmente podremos lanzar la aplicación con 
