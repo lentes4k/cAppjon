@@ -31,7 +31,7 @@ Ahora podemos correr los tests. En nuestro caso se encuentran incluídos `pytest
 
 
 Para lanzarlos ejecutar lo siguiente:
-En primer lugar, pytest, que nos lanzará una ejecución de los archivos que tenemos. En la carpeta `test` tenemos 4 archivos. Sólo uno de ellos ejecuta de manera correcta. Los demás arrojarán el error que comprobará el funcionamiento correcto de la clase `nota`. 
+En primer lugar, pytest, que nos lanzará una ejecución de los archivos que tenemos.
 ~~~
 poetry run pytest
 ~~~
@@ -50,11 +50,12 @@ Para hacerlo aún más fácil, se incluye un `script` que nos lanzará todos los
 ~~~
 poetry run test
 ~~~
+Este `script` se vale de la biblioteca `unittest` de `python`. Se ha elegido por la facilidad de acometer el objetivo del hito 4 de la asignatura (y por consejo del profesor)
 
 
 Podremos añadir nuevos tests al directorio `test` y lanzarlos con:
 ~~~
-poetry run /test/"nombre.py"
+poetry run test/"nombre.py"
 ~~~
 O al introducir `taskipy` podemos añadir lanzamientos de tareas en `[tool.taskipy.tasks]`
 

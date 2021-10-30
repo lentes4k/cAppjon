@@ -13,7 +13,7 @@ pytest = "6.2.5"
 pylint = "^2.11.1"
 
 [tool.poetry.scripts]
-test = 'test.script_test:test'
+test = 'test.tests'
 check = 'test.script_check:check'
 
 [build-system]
