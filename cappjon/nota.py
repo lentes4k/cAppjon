@@ -1,5 +1,5 @@
 from .constantes import Constantes
-from .errores import Error_personalizado
+from .errores import Error_nota
 
 
 class Nota:
@@ -11,14 +11,14 @@ class Nota:
         """Constructor de la clase que se pasa por parámetro el texto de una nota"""
 
         if (texto==''):
-            raise Error_personalizado("No se permiten notas vacias")
+            raise Error_nota("No se permiten notas vacias")
 
 
         if (len(texto) < Constantes.LONGITUD_NOTA_MIN):
-            raise Error_personalizado("Nota demasiado corta")
+            raise Error_nota("Nota demasiado corta")
 
         if (len(texto) > Constantes.LONGITUD_NOTA_MAX):
-            raise Error_personalizado("Nota demasiado larga")
+            raise Error_nota("Nota demasiado larga")
 
         self.texto = texto
 
