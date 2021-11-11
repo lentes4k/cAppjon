@@ -1,6 +1,6 @@
 lenguaje: python
-entidad: src/cajon.py
+entidad: cappjon/nota.py
 automatizar:
          fichero: pyproject.toml
-         orden: poetry
-         
+         orden: poetry run
+test: test/script_test.py

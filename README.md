@@ -31,18 +31,33 @@ Ahora podemos correr los tests. En nuestro caso se encuentran incluídos `pytest
 
 
 Para lanzarlos ejecutar lo siguiente:
+En primer lugar, pytest, que nos lanzará una ejecución de los archivos que tenemos.
 ~~~
 poetry run pytest
 ~~~
+También podemos hacer uso de `pylint` con esta línea de comando
 ~~~
 poetry run pylint
 ~~~
 
+Podremos comprobar la compilación correcta de nuestra clase con 
+~~~
+poetry run check
+~~~
+
+
+Para hacerlo aún más fácil, se incluye un `script` que nos lanzará todos los tests programados. Para hacer uso del mismo basta con lanzar
+~~~
+poetry run test
+~~~
+Este `script` se vale de la biblioteca `unittest` de `python`. Se ha elegido por la facilidad de acometer el objetivo del hito 4 de la asignatura (y por consejo del profesor)
+
 
 Podremos añadir nuevos tests al directorio `test` y lanzarlos con:
 ~~~
-poetry run /test/"nombre.py"
+poetry run test/"nombre.py"
 ~~~
+O al introducir `taskipy` podemos añadir lanzamientos de tareas en `[tool.taskipy.tasks]`
 
 
 Finalmente podremos lanzar la aplicación con 
