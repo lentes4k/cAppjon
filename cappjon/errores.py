@@ -1,4 +1,4 @@
-class Error_personalizado (Exception):
+class Error_nota (Exception):
 
     def __init__(self, *args):
 
