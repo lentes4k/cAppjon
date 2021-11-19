@@ -11,5 +11,3 @@ RUN  pip3 install poetry
 
 ENTRYPOINT ["poetry", "run", "test"]
 
-
-
