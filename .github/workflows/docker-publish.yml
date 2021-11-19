@@ -22,7 +22,7 @@ jobs:
         
       run: docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Hacer build
-      run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USER}}/cappjon:$(date +%s)
+      run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USER}}/cappjon:$(date +%s); docker images
       
     - name: Push en DockerHub
       run: docker push ${{secrets.DOCKER_USER}}/cappjon
