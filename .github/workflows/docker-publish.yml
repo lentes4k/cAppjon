@@ -1,0 +1,28 @@
+name: Docker Image CI
+
+on:
+  push:
+    paths:
+      - 'Dockerfile'
+      - 'pyrpoject.toml'
+      - 'poetry.lock'
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Nos logueamos en Docker Hub
+      env: 
+        DOCKER_USER: ${{secrets.DOCKER_USER}}
+        DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+        
+      run: docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
+    - name: Hacer build
+      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      
+    - name: Push en DockerHub
+      run: docker push ${{secrets.DOCKER_USER}}/cappjon
