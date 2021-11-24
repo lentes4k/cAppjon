@@ -8,7 +8,9 @@ WORKDIR /app/test/
 
 ENV PATH="$PATH:/home/anotador/.local/bin"
 
-RUN  pip3 install poetry
+RUN  pip3 install poetry 
+
+CMD  poetry install #para instalar las dependencias
 
 ENTRYPOINT ["poetry", "run", "test"]
 
