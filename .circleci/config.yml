@@ -9,7 +9,7 @@ jobs:
       - run:
           name: Lanzamos tests
           #corremos el contenedor, cuya salida final es el lanzamiento de los tests
-          command: docker tun -t -v `pwd`:/app/test lentes4k/cappjon
+          command: docker run -t -v `pwd`:/app/test lentes4k/cappjon
 
 workflows:
   integracion:
