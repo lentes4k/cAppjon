@@ -11,34 +11,8 @@ jobs:
           #corremos el contenedor, cuya salida final es el lanzamiento de los tests
           command: docker run -t -v `pwd`:/app/test lentes4k/cappjon
           
-  test-3.8: &test-template
-    docker:
-      - image: circleci/python:3.8
-      working_directory: lentes4k/cappjon
-      steps:
-        - checkout
-        - run:
-            name: Instalo poetry
-            command: |
-              pip3 install poetry
-              poetry install
-              poetry run test
-              
-  test-3.9:
-    <<: *test-template
-    docker:
-      - image: circleci/python:3.9
-      
-  test-3.10:
-    <<: *test-template
-    docker:
-      - image: circleci/python:3.10
-          
 
 workflows:
   integracion:
     jobs:
       - do-tests
-      - test-3.8
-      - test-3.9
-      - test-3.10
