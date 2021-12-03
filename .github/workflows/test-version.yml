@@ -20,6 +20,6 @@ jobs:
       - name: Instalamos poetry
         run: pip install poetry
       - name: Instalamos dependencias
-        run: poetry install --remove-untracked #para que no coja el .lock
+        run: poetry update && poetry install
       - name: Run tests
         run: poetry run test
