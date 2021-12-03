@@ -18,8 +18,8 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Instalamos poetry
-        run: pip install poetry --remove-untracked #para que no coja el .lock
+        run: pip install poetry
       - name: Instalamos dependencias
-        run: poetry install
+        run: poetry install --remove-untracked #para que no coja el .lock
       - name: Run tests
         run: poetry run test
