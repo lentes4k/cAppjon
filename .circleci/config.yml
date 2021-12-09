@@ -1,0 +1,18 @@
+version: 2.1
+
+jobs:
+  do-tests:
+    machine:
+      image: ubuntu-2004:202010-01
+    steps:
+      - checkout
+      - run:
+          name: Lanzamos tests
+          #corremos el contenedor, cuya salida final es el lanzamiento de los tests
+          command: docker run -t -v `pwd`:/app/test lentes4k/cappjon
+          
+
+workflows:
+  integracion:
+    jobs:
+      - do-tests
