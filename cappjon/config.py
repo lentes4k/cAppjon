@@ -9,6 +9,8 @@ class Config:
 			self.log_dir = os.getenv('LOG_DIR')
 		else:
 			self.log_dir = '/logs/'
+			if not os.path.exists(self.log_dir):
+				os.mkdir(self.log_dir)
 
 		if (os.getenv('LOG_FILE'):
 			self.log_file = os.getenv('LOG_FILE')
