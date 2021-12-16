@@ -8,6 +8,7 @@ license = "GPL 2.0"
 [tool.poetry.dependencies]
 python = "^3.8"
 pytest = "6.2.5"
+python-dotenv = "0.19.2"
 
 [tool.poetry.dev-dependencies]
 pylint = "^2.11.1"
