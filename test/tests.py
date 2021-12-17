@@ -1,9 +1,9 @@
 import sys
-sys.path.append(".")
+sys.path.append("..")
 
 
-import cappjon.nota
-import cappjon.errores
+from cappjon import nota
+from cappjon import errores
 import unittest
 
 class Tests (unittest.TestCase):

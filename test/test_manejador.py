@@ -1,11 +1,12 @@
 import sys
-sys.path.append(".")
+sys.path.append('..')
 
+import logging
 
-import cappjon.nota
-import cappjon.errores
+from cappjon import nota
+from cappjon import errores
 
-from logger import *
+from cappjon import logger
 
 class test_manejador:
 
