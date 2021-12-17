@@ -5,3 +5,4 @@ automatizar:
          orden: poetry run
 test: test/script_test.py
 CI: .github/workflows/test-version.yml
+configuracion: cappjon/config.py
