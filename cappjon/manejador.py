@@ -7,9 +7,9 @@ class Manejador:
 	def __init__ (self):
 		self.nota : Nota
 
-	def crea_nota(self):
+	def crea_nota(self, texto):
 		try: 
-			self.nota = Nota('esta é uma nota')
+			self.nota = Nota(texto)
 		except Exception as excepcion:
 			logging.error('Error creando la nota')
 			raise excepcion
