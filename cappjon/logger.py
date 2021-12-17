@@ -13,4 +13,4 @@ class logger_notas:
 		path = directorio + archivo
 
 	def logging(self):
-		logging.basicConfig(filename=(path, level=loggin.DEBUG, format=format='%(asctime)s %(message)s')
+		logging.basicConfig(filename=path, format='%(asctime)s %(message)s')
