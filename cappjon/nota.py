@@ -6,6 +6,7 @@ class Nota:
     """ Clase que define una nota que contiene un texto y una serie de palabras clave que la identifican """
     texto = ''
     palabrasClave = []
+    id = None
 
     def __init__(self, texto):
         """Constructor de la clase que se pasa por parámetro el texto de una nota"""
@@ -21,6 +22,7 @@ class Nota:
             raise Error("Nota demasiado larga")
 
         self.texto = texto
+	self.id = Hash.hashing(self.nombre)
 
     def get_texto(self):
         """ Método Get para el texto de la nota"""
