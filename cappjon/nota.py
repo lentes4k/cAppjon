@@ -1,5 +1,5 @@
 from .constantes import Constantes
-from .errores import Error_nota
+from .errores import Error
 
 
 class Nota:
@@ -11,22 +11,22 @@ class Nota:
         """Constructor de la clase que se pasa por parámetro el texto de una nota"""
 
         if (texto==''):
-            raise Error_nota("No se permiten notas vacias")
+            raise Error("No se permiten notas vacias")
 
 
         if (len(texto) < Constantes.LONGITUD_NOTA_MIN):
-            raise Error_nota("Nota demasiado corta")
+            raise Error("Nota demasiado corta")
 
         if (len(texto) > Constantes.LONGITUD_NOTA_MAX):
-            raise Error_nota("Nota demasiado larga")
+            raise Error("Nota demasiado larga")
 
         self.texto = texto
 
-    def getTexto(self):
+    def get_texto(self):
         """ Método Get para el texto de la nota"""
         return self.texto
 
-    def getPalabrasClave(self):
+    def get_palabras_clave(self):
         """Método Get para las palabras clave de la nota"""
         return self.palabrasClave
         

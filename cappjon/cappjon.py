@@ -1,6 +1,6 @@
-from .errores import Error_cappjon
+from .errores import Error
 
-class cappjon:
+class Cappjon:
 	""" Clase que define un recipiente de las notas. Tiene un nombre y un id único """
 	id = None
 	nombre = ""
