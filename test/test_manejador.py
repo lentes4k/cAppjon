@@ -9,7 +9,7 @@ from cappjon import errores
 from cappjon import logger
 from cappjon import manejador
 
-class test_manejador:
+class test_manejador():
 
 	manejador = manejador.Manejador()
 

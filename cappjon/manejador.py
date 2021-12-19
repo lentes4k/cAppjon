@@ -1,15 +1,19 @@
 import logging
 
 from .nota import Nota
+from .cappjon import Cappjon
 
 class Manejador:
 
 	def __init__ (self):
 		self.nota : Nota
+		self.cappjon : Cappjon
 
 	def crea_nota(self, texto):
-		try: 
+		try:
+			self.cappjon = Cappjon("Cajon de prueba")
 			self.nota = Nota(texto)
+			self.nota.almacenar
 		except Exception as excepcion:
-			logging.error('Error creando la nota')
+			logging.error('Nota no creada')
 			raise excepcion
