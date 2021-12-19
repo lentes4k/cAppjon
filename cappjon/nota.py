@@ -22,7 +22,7 @@ class Nota:
             raise Error("Nota demasiado larga")
 
         self.texto = texto
-	self.id = Hash.hashing(self.texto)
+        self.id = Hash.hashing(self.texto)
 
     def get_texto(self):
         """ Método Get para el texto de la nota"""
