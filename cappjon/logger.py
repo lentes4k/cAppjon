@@ -2,7 +2,7 @@ import logging
 
 from .config import Config
 
-class logger_notas:
+class Logger_notas:
 
 	path = ''
 
