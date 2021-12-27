@@ -14,7 +14,7 @@ class Manejador:
 			self.cappjon = Cappjon("Cajon de prueba")
 			self.nota = Nota(texto)
 			self.nota.almacenar
-			self.logger.logging("La nota ha sido creado y añadida al cappjón"
+			self.logger.info("La nota ha sido creado y añadida al cappjón"
 		except Exception as excepcion:
-			self.logger.logging('Nota no creada')
+			self.logger.error('Nota no creada')
 			raise excepcion
