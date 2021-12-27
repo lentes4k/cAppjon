@@ -18,3 +18,12 @@ class Manejador:
 		except Exception as excepcion:
 			self.logger.error('Nota no creada')
 			raise excepcion
+
+
+	def crea_cappjon(self, nombre: str):
+		try:
+			self.cappjon = Cappjon(nombre)
+			self.logger.info("El cappjon ha sido creado con éxito")
+		except Exception as excepcion
+			self.logger.error("Cappjon no creado")
+			raise excepcion
