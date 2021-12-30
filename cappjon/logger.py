@@ -11,19 +11,20 @@ class Logger_notas:
 		directorio = configuration.get_directorio()
 		archivo = configuration.get_archivo()
 		path = directorio + archivo
+		el_logger = logging.getLogger()
 		logging.basicConfig(filename=path, format='%(asctime)s %(message)s')
 
 	def info(self, msg):
-		logging.getLogger().info(msg)
+		el_logger.info(msg)
 
 	def error(self, msg):
-		logging.getLogger().error(msg)
+		el_logger.error(msg)
 
 	def debug(self, msg):
-		logging.getLogger().debug(msg)
+		el_logger.debug(msg)
 
 	def warning(self, msg):
-		logging.getLogger().warning(msg)
+		el_logger.warning(msg)
 
 	def critical(self, msg):
-		logging.getLogger().critical(msg)
+		el_logger.critical(msg)
