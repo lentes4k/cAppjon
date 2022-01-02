@@ -31,4 +31,7 @@
 *.out
 *.app
 
+#Conf
+*.env
+
 __pycache__
